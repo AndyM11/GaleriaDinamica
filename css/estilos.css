@@ -55,6 +55,7 @@ header form .barra-busqueda {
   border: none;
   text-align: center;
   font-size: 16px;
+  outline: none;
 }
 
 header .categorias {
@@ -77,5 +78,35 @@ header .categorias a {
 
 header .categorias a.active {
   color: #000;
+}
+
+.grid {
+  position: relative;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity .5s linear 1s;
+  transition: opacity .5s linear 1s;
+}
+
+.grid.imagenes-cargadas {
+  opacity: 1;
+}
+
+.grid .item {
+  position: absolute;
+  display: block;
+  padding: 0;
+  margin: 10px;
+  width: calc(33.33333% - 20px);
+}
+
+.grid .item .item-contenido {
+  position: relative;
+}
+
+.grid .item img {
+  width: 100%;
+  cursor: pointer;
+  vertical-align: top;
 }
 /*# sourceMappingURL=estilos.css.map */
