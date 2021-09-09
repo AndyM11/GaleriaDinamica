@@ -166,4 +166,104 @@ header .categorias a.active {
   right: -20px;
   top: -20px;
 }
+
+footer .redes-sociales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .redes-sociales a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: #000;
+  color: #fff;
+  margin: 10px;
+  text-align: center;
+  border-radius: 100px;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+
+footer .redes-sociales a ion-icon {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+footer .redes-sociales .twitter {
+  background: #1da1f2;
+}
+
+footer .redes-sociales .facebook {
+  background: #1877f2;
+}
+
+footer .redes-sociales .instagram {
+  background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #f56040, #f77737, #fcaf45);
+}
+
+footer .redes-sociales .github {
+  background: #333;
+}
+
+footer .contenedor-icono:hover a {
+  -webkit-animation: icono .5s ease;
+          animation: icono .5s ease;
+}
+
+footer .creado-por {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #c13584;
+  font-weight: 400;
+}
+
+footer .creado-por a {
+  color: #000;
+}
+
+footer .creado-por a:hover {
+  text-decoration: underline;
+}
+
+@-webkit-keyframes icono {
+  form {
+    -webkit-transform: rotate3d(0, 0, 0, 0);
+            transform: rotate3d(0, 0, 0, 0);
+  }
+  to {
+    -webkit-transform: rotate3d(0, 1, 0, 360deg);
+            transform: rotate3d(0, 1, 0, 360deg);
+  }
+}
+
+@keyframes icono {
+  form {
+    -webkit-transform: rotate3d(0, 0, 0, 0);
+            transform: rotate3d(0, 0, 0, 0);
+  }
+  to {
+    -webkit-transform: rotate3d(0, 1, 0, 360deg);
+            transform: rotate3d(0, 1, 0, 360deg);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .grid .item {
+    width: calc(50% - 20px);
+  }
+  header .barra-busqueda {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=estilos.css.map */
