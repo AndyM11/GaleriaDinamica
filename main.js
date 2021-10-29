@@ -57,3 +57,9 @@ window.addEventListener('load', () => {
         }
     });
 });
+
+//agragar evelentos para la barra de busqueda
+document.querySelector('#barra-busqueda').addEventListener('keyup', () => {
+    const busqueda = document.querySelector('#barra-busqueda').value;
+    grid.filter((item) => item.getElement().dataset.etiquetas.includes(busqueda));
+});
